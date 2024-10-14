@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B00BE58A2CBD3B1C005042A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B00BE56B2CBD3B1B005042A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B00BE5722CBD3B1B005042A6;
+			remoteInfo = KimBilir;
+		};
+		B00BE5942CBD3B1C005042A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B00BE56B2CBD3B1B005042A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B00BE5722CBD3B1B005042A6;
+			remoteInfo = KimBilir;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B00BE5732CBD3B1B005042A6 /* KimBilir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KimBilir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00BE5892CBD3B1C005042A6 /* KimBilirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KimBilirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00BE5932CBD3B1C005042A6 /* KimBilirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KimBilirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B00BE59B2CBD3B1C005042A6 /* Exceptions for "KimBilir" folder in "KimBilir" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B00BE5722CBD3B1B005042A6 /* KimBilir */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B00BE5752CBD3B1B005042A6 /* KimBilir */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B00BE59B2CBD3B1C005042A6 /* Exceptions for "KimBilir" folder in "KimBilir" target */,
+			);
+			path = KimBilir;
+			sourceTree = "<group>";
+		};
+		B00BE58C2CBD3B1C005042A6 /* KimBilirTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KimBilirTests;
+			sourceTree = "<group>";
+		};
+		B00BE5962CBD3B1C005042A6 /* KimBilirUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KimBilirUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B00BE5702CBD3B1B005042A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00BE5862CBD3B1C005042A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00BE5902CBD3B1C005042A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B00BE56A2CBD3B1B005042A6 = {
+			isa = PBXGroup;
+			children = (
+				B00BE5752CBD3B1B005042A6 /* KimBilir */,
+				B00BE58C2CBD3B1C005042A6 /* KimBilirTests */,
+				B00BE5962CBD3B1C005042A6 /* KimBilirUITests */,
+				B00BE5742CBD3B1B005042A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B00BE5742CBD3B1B005042A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B00BE5732CBD3B1B005042A6 /* KimBilir.app */,
+				B00BE5892CBD3B1C005042A6 /* KimBilirTests.xctest */,
+				B00BE5932CBD3B1C005042A6 /* KimBilirUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B00BE5722CBD3B1B005042A6 /* KimBilir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00BE59C2CBD3B1C005042A6 /* Build configuration list for PBXNativeTarget "KimBilir" */;
+			buildPhases = (
+				B00BE56F2CBD3B1B005042A6 /* Sources */,
+				B00BE5702CBD3B1B005042A6 /* Frameworks */,
+				B00BE5712CBD3B1B005042A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B00BE5752CBD3B1B005042A6 /* KimBilir */,
+			);
+			name = KimBilir;
+			packageProductDependencies = (
+			);
+			productName = KimBilir;
+			productReference = B00BE5732CBD3B1B005042A6 /* KimBilir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B00BE5882CBD3B1C005042A6 /* KimBilirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00BE5A12CBD3B1C005042A6 /* Build configuration list for PBXNativeTarget "KimBilirTests" */;
+			buildPhases = (
+				B00BE5852CBD3B1C005042A6 /* Sources */,
+				B00BE5862CBD3B1C005042A6 /* Frameworks */,
+				B00BE5872CBD3B1C005042A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00BE58B2CBD3B1C005042A6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B00BE58C2CBD3B1C005042A6 /* KimBilirTests */,
+			);
+			name = KimBilirTests;
+			packageProductDependencies = (
+			);
+			productName = KimBilirTests;
+			productReference = B00BE5892CBD3B1C005042A6 /* KimBilirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B00BE5922CBD3B1C005042A6 /* KimBilirUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00BE5A42CBD3B1C005042A6 /* Build configuration list for PBXNativeTarget "KimBilirUITests" */;
+			buildPhases = (
+				B00BE58F2CBD3B1C005042A6 /* Sources */,
+				B00BE5902CBD3B1C005042A6 /* Frameworks */,
+				B00BE5912CBD3B1C005042A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00BE5952CBD3B1C005042A6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B00BE5962CBD3B1C005042A6 /* KimBilirUITests */,
+			);
+			name = KimBilirUITests;
+			packageProductDependencies = (
+			);
+			productName = KimBilirUITests;
+			productReference = B00BE5932CBD3B1C005042A6 /* KimBilirUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B00BE56B2CBD3B1B005042A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					B00BE5722CBD3B1B005042A6 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					B00BE5882CBD3B1C005042A6 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = B00BE5722CBD3B1B005042A6;
+					};
+					B00BE5922CBD3B1C005042A6 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = B00BE5722CBD3B1B005042A6;
+					};
+				};
+			};
+			buildConfigurationList = B00BE56E2CBD3B1B005042A6 /* Build configuration list for PBXProject "KimBilir" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B00BE56A2CBD3B1B005042A6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B00BE5742CBD3B1B005042A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B00BE5722CBD3B1B005042A6 /* KimBilir */,
+				B00BE5882CBD3B1C005042A6 /* KimBilirTests */,
+				B00BE5922CBD3B1C005042A6 /* KimBilirUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B00BE5712CBD3B1B005042A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00BE5872CBD3B1C005042A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00BE5912CBD3B1C005042A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B00BE56F2CBD3B1B005042A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00BE5852CBD3B1C005042A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00BE58F2CBD3B1C005042A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00BE58B2CBD3B1C005042A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B00BE5722CBD3B1B005042A6 /* KimBilir */;
+			targetProxy = B00BE58A2CBD3B1C005042A6 /* PBXContainerItemProxy */;
+		};
+		B00BE5952CBD3B1C005042A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B00BE5722CBD3B1B005042A6 /* KimBilir */;
+			targetProxy = B00BE5942CBD3B1C005042A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B00BE59D2CBD3B1C005042A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5P32Y7JUB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KimBilir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevdeaydin.KimBilir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B00BE59E2CBD3B1C005042A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5P32Y7JUB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KimBilir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevdeaydin.KimBilir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B00BE59F2CBD3B1C005042A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B00BE5A02CBD3B1C005042A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B00BE5A22CBD3B1C005042A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5P32Y7JUB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevdeaydin.KimBilirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KimBilir.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KimBilir";
+			};
+			name = Debug;
+		};
+		B00BE5A32CBD3B1C005042A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5P32Y7JUB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevdeaydin.KimBilirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KimBilir.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KimBilir";
+			};
+			name = Release;
+		};
+		B00BE5A52CBD3B1C005042A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5P32Y7JUB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevdeaydin.KimBilirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KimBilir;
+			};
+			name = Debug;
+		};
+		B00BE5A62CBD3B1C005042A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5P32Y7JUB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevdeaydin.KimBilirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KimBilir;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B00BE56E2CBD3B1B005042A6 /* Build configuration list for PBXProject "KimBilir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00BE59F2CBD3B1C005042A6 /* Debug */,
+				B00BE5A02CBD3B1C005042A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00BE59C2CBD3B1C005042A6 /* Build configuration list for PBXNativeTarget "KimBilir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00BE59D2CBD3B1C005042A6 /* Debug */,
+				B00BE59E2CBD3B1C005042A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00BE5A12CBD3B1C005042A6 /* Build configuration list for PBXNativeTarget "KimBilirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00BE5A22CBD3B1C005042A6 /* Debug */,
+				B00BE5A32CBD3B1C005042A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00BE5A42CBD3B1C005042A6 /* Build configuration list for PBXNativeTarget "KimBilirUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00BE5A52CBD3B1C005042A6 /* Debug */,
+				B00BE5A62CBD3B1C005042A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B00BE56B2CBD3B1B005042A6 /* Project object */;
+}
