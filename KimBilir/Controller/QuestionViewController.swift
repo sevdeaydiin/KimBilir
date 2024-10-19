@@ -42,7 +42,7 @@ class QuestionViewController: UIViewController {
     var currentScore: Int = 0
     
     var timer: Timer?
-    var currentTime = 10
+    var currentTime = 60
     
     override func viewDidLoad() {
         super.viewDidLoad()
