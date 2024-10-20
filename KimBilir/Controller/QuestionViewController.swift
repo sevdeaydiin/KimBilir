@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 class QuestionViewController: UIViewController {
-
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerALabel: UIButton!
     @IBOutlet weak var answerBLabel: UIButton!
@@ -16,26 +17,28 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var answerDLabel: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     
+    var player: AVAudioPlayer!
+    
     var questions: [Question] = [
-            Question(questionText: "Azı dişi hangisinin eş anlamlısıdır?",
-                     answers: ["Sindirici diş", "Öğütücü diş", "Koparıcı diş", "Kesici diş"],
-                     correctAnswer: "Öğütücü diş"),
-            Question(questionText: "Hasbihal, ne demektir?",
-                     answers: ["Gürültü", "Geçmiş", "Sohbet", "Özlem"],
-                     correctAnswer: "Sohbet"),
-            Question(questionText: "\"Mavi, lacivert, mor ve bu renklerin tonları\" hangisinin sözlük tanımıdır?",
-                     answers: ["Sıcak renkler", "Soğuk renkler", "Ilık renkler", "Serin renkler"],
-                     correctAnswer: "Soğuk renkler"),
-            Question(questionText: "Genellikle hangisinden bahsedilirken çivi gibi benzetmesi yapılır?",
-                     answers: ["Denizin çok soğuk olmasından", "Havanın çok sıcak olmasından", "Toprağın çok kaygan olmasından", "Rüzgarın çok hafif olmasından"],
-                     correctAnswer: "Denizin çok soğuk olmasından"),
-            Question(questionText: "Altay Dağları'na tırmanan bir dağcı hangisinde olabilir?",
-                     answers: ["İzmir", "Kahire", "Bombay", "Moğolistan"],
-                     correctAnswer: "Moğolistan"),
-            Question(questionText: "Kaçkar Dağı, hangi coğrafi bölgenin en yüksek dağıdır?",
-                     answers: ["Ege", "Marmara", "Akdeniz", "Karadeniz"],
-                     correctAnswer: "Karadeniz")
-        ]
+        Question(questionText: "Azı dişi hangisinin eş anlamlısıdır?",
+                 answers: ["Sindirici diş", "Öğütücü diş", "Koparıcı diş", "Kesici diş"],
+                 correctAnswer: "Öğütücü diş"),
+        Question(questionText: "Hasbihal, ne demektir?",
+                 answers: ["Gürültü", "Geçmiş", "Sohbet", "Özlem"],
+                 correctAnswer: "Sohbet"),
+        Question(questionText: "\"Mavi, lacivert, mor ve bu renklerin tonları\" hangisinin sözlük tanımıdır?",
+                 answers: ["Sıcak renkler", "Soğuk renkler", "Ilık renkler", "Serin renkler"],
+                 correctAnswer: "Soğuk renkler"),
+        Question(questionText: "Genellikle hangisinden bahsedilirken çivi gibi benzetmesi yapılır?",
+                 answers: ["Denizin çok soğuk olmasından", "Havanın çok sıcak olmasından", "Toprağın çok kaygan olmasından", "Rüzgarın çok hafif olmasından"],
+                 correctAnswer: "Denizin çok soğuk olmasından"),
+        Question(questionText: "Altay Dağları'na tırmanan bir dağcı hangisinde olabilir?",
+                 answers: ["İzmir", "Kahire", "Bombay", "Moğolistan"],
+                 correctAnswer: "Moğolistan"),
+        Question(questionText: "Kaçkar Dağı, hangi coğrafi bölgenin en yüksek dağıdır?",
+                 answers: ["Ege", "Marmara", "Akdeniz", "Karadeniz"],
+                 correctAnswer: "Karadeniz")
+    ]
     
     var currentQuestionIndex: Int = 0
     var currentQuestion: Question?
@@ -53,20 +56,20 @@ class QuestionViewController: UIViewController {
         loadNewQuestion()
     }
     
-    @IBAction func answerA(_ sender: UIButton) {
-        checkAnswer(selectedIndex: 0, button: sender)
-    }
-    
-    @IBAction func answerB(_ sender: UIButton) {
-        checkAnswer(selectedIndex: 1, button: sender)
-    }
-    
-    @IBAction func answerC(_ sender: UIButton) {
-        checkAnswer(selectedIndex: 2, button: sender)
-    }
-    
-    @IBAction func answerD(_ sender: UIButton) {
-        checkAnswer(selectedIndex: 3, button: sender)
+    @IBAction func answerCheckButton(_ sender: UIButton) {
+        
+        switch sender.title(for: .normal)?.prefix(2) {
+        case "A:":
+            checkAnswer(selectedIndex: 0, button: sender)
+        case "B:":
+            checkAnswer(selectedIndex: 1, button: sender)
+        case "C:":
+            checkAnswer(selectedIndex: 2, button: sender)
+        case "D:":
+            checkAnswer(selectedIndex: 3, button: sender)
+        default:
+            print("error")
+        }
     }
     
     func rightAnswer(buttonName: UIButton) {
@@ -87,16 +90,30 @@ class QuestionViewController: UIViewController {
             if selectedAnswer == currentQuestion.correctAnswer {
                 currentScore += 5
                 rightAnswer(buttonName: button)
+                correctAnswer()
             } else {
                 wrongAnswer(buttonName: button)
+                errorAnswer()
             }
         }
         
-        moveToNextQuestion(after: 1.5)
+        moveToNextQuestion(after: 1.0)
+    }
+    
+    func correctAnswer(){
+        let url = Bundle.main.url(forResource: "correct", withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+    }
+    
+    func errorAnswer(){
+        let url = Bundle.main.url(forResource: "error", withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
     }
     
     func loadNewQuestion() {
-
+        
         currentQuestionIndex = Int.random(in: 0..<questions.count)
         currentQuestion = questions[currentQuestionIndex]
         
