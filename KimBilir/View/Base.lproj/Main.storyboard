@@ -97,7 +97,7 @@
                                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="gVi-ma-EeL">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="182"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAp-FF-lCJ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAp-FF-lCJ">
                                                 <rect key="frame" x="65" y="95" width="43" height="28.666666666666671"/>
                                                 <color key="tintColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -152,7 +152,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="366-mf-uoQ"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="large">
+                                                        <buttonConfiguration key="configuration" style="plain" title="A:" cornerStyle="large">
                                                             <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="3">
                                                                 <color key="backgroundColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,7 +160,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="answerA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KQw-w2-VCI"/>
+                                                            <action selector="answerCheckButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KQw-w2-VCI"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQK-Dq-c56">
@@ -170,7 +170,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="P7x-mJ-eTe"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="large">
+                                                        <buttonConfiguration key="configuration" style="plain" title="B:" cornerStyle="large">
                                                             <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="2">
                                                                 <color key="backgroundColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -178,7 +178,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="answerB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHw-Qi-dsz"/>
+                                                            <action selector="answerCheckButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mDX-sq-RIc"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R6-P4-AKa">
@@ -188,7 +188,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="X6y-Ad-rlH"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="large">
+                                                        <buttonConfiguration key="configuration" style="plain" title="C:" cornerStyle="large">
                                                             <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="3">
                                                                 <color key="backgroundColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -196,7 +196,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="answerC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gak-NP-xLS"/>
+                                                            <action selector="answerCheckButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lD4-4C-PUt"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8R-2I-yAE">
@@ -207,7 +207,7 @@
                                                         </constraints>
                                                         <color key="tintColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="large">
+                                                        <buttonConfiguration key="configuration" style="plain" title="D:" cornerStyle="large">
                                                             <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="3">
                                                                 <color key="backgroundColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -215,7 +215,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="answerD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9J-tK-VSU"/>
+                                                            <action selector="answerCheckButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PcH-LD-eUz"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -258,10 +258,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="mde-0f-qoG"/>
                     <connections>
-                        <outlet property="answerALabel" destination="brs-ig-yNE" id="FNB-xX-M2d"/>
+                        <outlet property="answerALabel" destination="brs-ig-yNE" id="byu-pG-SKt"/>
                         <outlet property="answerBLabel" destination="IQK-Dq-c56" id="dn0-K5-ng6"/>
-                        <outlet property="answerCLabel" destination="5R6-P4-AKa" id="jOT-96-rKO"/>
-                        <outlet property="answerDLabel" destination="g8R-2I-yAE" id="xcS-FG-1Z4"/>
+                        <outlet property="answerCLabel" destination="5R6-P4-AKa" id="1YO-kc-6fz"/>
+                        <outlet property="answerDLabel" destination="g8R-2I-yAE" id="CTU-jv-dBk"/>
                         <outlet property="questionLabel" destination="Oct-Do-pJD" id="nYo-c7-LZu"/>
                         <outlet property="timeLabel" destination="jAp-FF-lCJ" id="cZ4-d9-u2f"/>
                         <segue destination="l9W-bf-Hgs" kind="presentation" identifier="toScoreView" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="pzL-dG-g2X"/>
