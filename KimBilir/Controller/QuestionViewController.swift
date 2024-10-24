@@ -101,13 +101,13 @@ class QuestionViewController: UIViewController {
     }
     
     func correctAnswer(){
-        let url = Bundle.main.url(forResource: "correct", withExtension: "mp3")
+        let url = Bundle.main.url(forResource: "correct", withExtension: "wav")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
     }
     
     func errorAnswer(){
-        let url = Bundle.main.url(forResource: "error", withExtension: "mp3")
+        let url = Bundle.main.url(forResource: "error", withExtension: "wav")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
     }
@@ -156,6 +156,11 @@ class QuestionViewController: UIViewController {
             performSegue(withIdentifier: "toScoreView", sender: nil)
             print(currentScore)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! ScoreViewController
+        destinationVC.score = currentScore
     }
     
     func moveToNextQuestion(after delay: TimeInterval) {
