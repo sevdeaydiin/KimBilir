@@ -14,12 +14,16 @@ class ScoreViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var cloudView: UIImageView!
     
+    var score: Int?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scoreLabel.alpha = 0
         cloudView.alpha = 0
         yourScoreLabel.transform = CGAffineTransform(translationX: 0, y: -self.view.bounds.height)
         homeViewButton.transform = CGAffineTransform(translationX: 0, y: self.view.bounds.height)
+        scoreLabel.text = String(score!)
     }
     
     override func viewDidAppear(_ animated: Bool) {
