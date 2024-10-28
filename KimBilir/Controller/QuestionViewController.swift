@@ -14,7 +14,7 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet var answerButtons: [AnswerButton]!
+    @IBOutlet var answerButtons: [UIButton]!
     
     private var currentQuestionIndex: Int = 0
     private var currentQuestion: Question? { questions[currentQuestionIndex] }
@@ -48,9 +48,6 @@ class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //questionLabel.backgroundColor = .saturn.withAlphaComponent(0.9)
-        //questionLabel.layer.cornerRadius = 15
-        //questionLabel.layer.masksToBounds = true
         timeLabel.layer.masksToBounds = true
         timeLabel.textAlignment = .center
         setupLayout()
@@ -60,7 +57,7 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButtonTapped(_ sender: UIButton) {
-        guard let selectedIndex = answerButtons.firstIndex(of: sender as! AnswerButton) else { return }
+        guard let selectedIndex = answerButtons.firstIndex(of: sender) else { return }
         checkAnswer(selectedIndex: selectedIndex, button: sender)
     }
     
@@ -107,7 +104,9 @@ class QuestionViewController: UIViewController {
         updateScore(isCorrect: isCorrect)
         updateButtonAppearance(button, isCorrect: isCorrect)
         playAnswerSound(isCorrect: isCorrect)
-        moveToNextQuestion(after: 1.0)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.moveToNextQuestion(after: 0) // Hemen geçiş yap
+        }
     }
     
     private func updateScore(isCorrect: Bool) {
@@ -115,7 +114,9 @@ class QuestionViewController: UIViewController {
     }
     
     private func updateButtonAppearance(_ button: UIButton, isCorrect: Bool) {
-        button.configuration?.background.backgroundColor = isCorrect ? .systemGreen : .systemRed
+        var config = button.configuration
+        config?.background.backgroundColor = isCorrect ? .systemGreen : .systemRed
+        button.configuration = config
     }
     
     private func playAnswerSound(isCorrect: Bool) {
@@ -131,7 +132,9 @@ class QuestionViewController: UIViewController {
     
     private func resetAnswerButtons() {
         answerButtons.forEach { button in
-            button.configuration?.background.backgroundColor = .answerButton
+            var config = button.configuration
+            config?.background.backgroundColor = .answerButton
+            button.configuration = config
         }
     }
     
@@ -146,7 +149,7 @@ class QuestionViewController: UIViewController {
         destinationVC.score = currentScore
     }
     
-    func setupLayout() {
+    private func setupLayout() {
         
         let height: CGFloat = view.bounds.height
         let width: CGFloat = view.bounds.width
@@ -222,11 +225,7 @@ class QuestionViewController: UIViewController {
                 }
             }
         }
-        
-        
-        
     }
-    
 }
 
 private extension UILabel {
