@@ -16,68 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="r76-qT-vqX">
-                                <rect key="frame" x="100" y="351" width="193" height="150"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVz-Mk-Yq2">
-                                        <rect key="frame" x="0.0" y="0.0" width="193" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Dm3-JH-Cag"/>
-                                        </constraints>
-                                        <color key="tintColor" name="answerButton"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Çocuk" cornerStyle="large">
-                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="2">
-                                                <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </backgroundConfiguration>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="childButton:" destination="E6h-cL-ZlU" eventType="touchUpInside" id="HeR-UB-ydu"/>
-                                            <action selector="childButton:" destination="SPx-nP-nr0" eventType="touchUpInside" id="V0c-lf-Or8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK2-mk-jZ5">
-                                        <rect key="frame" x="0.0" y="100" width="193" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="RxL-T5-ybl"/>
-                                        </constraints>
-                                        <color key="tintColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Yetişkin" cornerStyle="large">
-                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="2">
-                                                <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </backgroundConfiguration>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="adultButton:" destination="E6h-cL-ZlU" eventType="touchUpInside" id="PPJ-os-lt6"/>
-                                            <action selector="adultButton:" destination="SPx-nP-nr0" eventType="touchUpInside" id="pPY-LS-xg5"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVz-Mk-Yq2">
+                                <rect key="frame" x="155" y="408" width="82.666666666666629" height="34.333333333333314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="answerButton"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Çocuk" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="2">
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="childButton:" destination="E6h-cL-ZlU" eventType="touchUpInside" id="HeR-UB-ydu"/>
+                                    <action selector="childButton:" destination="SPx-nP-nr0" eventType="touchUpInside" id="V0c-lf-Or8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK2-mk-jZ5">
+                                <rect key="frame" x="155" y="466" width="82.666666666666629" height="34.333333333333314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Yetişkin" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="2">
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="adultButton:" destination="E6h-cL-ZlU" eventType="touchUpInside" id="PPJ-os-lt6"/>
+                                    <action selector="adultButton:" destination="SPx-nP-nr0" eventType="touchUpInside" id="pPY-LS-xg5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8xq-1u-ymh"/>
                         <color key="backgroundColor" red="0.2235293984" green="0.20392158630000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="r76-qT-vqX" firstAttribute="centerX" secondItem="Lyi-QW-KRW" secondAttribute="centerX" id="7IY-FL-Xgn"/>
-                            <constraint firstItem="r76-qT-vqX" firstAttribute="leading" secondItem="8xq-1u-ymh" secondAttribute="leading" constant="100" id="95i-D9-ZKe"/>
-                            <constraint firstItem="r76-qT-vqX" firstAttribute="centerY" secondItem="Lyi-QW-KRW" secondAttribute="centerY" id="R7p-PJ-lNb"/>
-                            <constraint firstItem="8xq-1u-ymh" firstAttribute="trailing" secondItem="r76-qT-vqX" secondAttribute="trailing" constant="100" id="z4L-bl-dlx"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="60L-qb-Af6"/>
                     <connections>
+                        <outlet property="adultButton" destination="nK2-mk-jZ5" id="eub-Gu-k32"/>
+                        <outlet property="childButton" destination="GVz-Mk-Yq2" id="MJ8-gR-8Hm"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toQuestionView" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="KbU-PW-bF4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrz-ez-ocy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="SPx-nP-nr0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-618" y="-32"/>
+            <point key="canvasLocation" x="-619.08396946564881" y="-32.394366197183103"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -89,6 +77,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eLw-3A-ZX5">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="JgH-OI-hKK">
+                                <rect key="frame" x="16" y="59" width="145" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAp-FF-lCJ">
@@ -165,6 +157,7 @@
                                     <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="2">
                                         <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -177,6 +170,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mde-0f-qoG"/>
                     <connections>
+                        <outlet property="cloudImage" destination="JgH-OI-hKK" id="sMe-Ml-cYz"/>
                         <outlet property="questionLabel" destination="Oct-Do-pJD" id="nYo-c7-LZu"/>
                         <outlet property="timeLabel" destination="jAp-FF-lCJ" id="cZ4-d9-u2f"/>
                         <outletCollection property="answerButtons" destination="brs-ig-yNE" collectionClass="NSMutableArray" id="Igc-94-mWa"/>

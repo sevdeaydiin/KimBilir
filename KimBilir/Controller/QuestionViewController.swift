@@ -10,12 +10,13 @@ import SnapKit
 import AVFoundation
 
 class QuestionViewController: UIViewController {
-    let backgroundImage = UIImageView.init(image: UIImage(named: "background"))
+    let backgroundImage = UIImageView.init(image: UIImage(named: "bg"))
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet var answerButtons: [UIButton]!
     
+    @IBOutlet weak var cloudImage: UIImageView!
     private var currentQuestionIndex: Int = 0
     private var currentQuestion: Question? { questions[currentQuestionIndex] }
     private var currentScore: Int = 0
@@ -151,18 +152,12 @@ class QuestionViewController: UIViewController {
     
     private func setupLayout() {
         
-        let height: CGFloat = view.bounds.height
-        let width: CGFloat = view.bounds.width
-        let sidePadding: CGFloat = width * 0.08
-        let buttonSpacing: CGFloat = height * 0.02
-        let buttonHeight: CGFloat
-        let buttonBottomPadding: CGFloat
-        let labelFontSize: CGFloat
-        let timeLabelTopPadding: CGFloat
-        let timeLabelLeadingPadding: CGFloat
+        let metrics = LayoutConstants(view: self.view)
         
         view.addSubview(backgroundImage)
         view.addSubview(questionLabel)
+        
+        view.addSubview(cloudImage)
         view.addSubview(timeLabel)
         
         backgroundImage.translatesAutoresizingMaskIntoConstraints = false
@@ -170,58 +165,45 @@ class QuestionViewController: UIViewController {
             make.top.bottom.leading.trailing.equalToSuperview()
         }
         
-        if UIDevice.current.userInterfaceIdiom == .pad { // iPad
-            labelFontSize = 32
-            timeLabelTopPadding = height * 0.085
-            buttonBottomPadding = height * 0.15
-            timeLabelLeadingPadding = width * 0.25
-            buttonHeight = height * 0.06
-        } else {
-            if height < 668 { // iPhone SE
-                labelFontSize = 16
-                timeLabelTopPadding = height * 0.06
-                buttonBottomPadding = height * 0.15
-                timeLabelLeadingPadding = width * 0.21
-                buttonHeight = height * 0.07
-            } else {
-                labelFontSize = 20
-                timeLabelTopPadding = width * 0.065
-                buttonBottomPadding = height * 0.15
-                timeLabelLeadingPadding = width * 0.215
-                buttonHeight = height * 0.06
-            }
+        questionLabel.font = UIFont.systemFont(ofSize: metrics.labelFontSize, weight: .semibold)
+        timeLabel.font = UIFont.systemFont(ofSize: metrics.labelFontSize, weight: .bold)
+        
+        cloudImage.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(metrics.timeLabelTopPadding)
+            make.leading.equalTo(metrics.timeLabelLeadingPadding)
+            make.width.height.equalTo(metrics.width * 0.3)
         }
         
-        questionLabel.font = UIFont.systemFont(ofSize: labelFontSize, weight: .semibold)
-        timeLabel.font = UIFont.systemFont(ofSize: labelFontSize, weight: .bold)
-        
         timeLabel.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(timeLabelTopPadding)
-            make.leading.equalTo(timeLabelLeadingPadding)
+            //make.top.equalTo(view.safeAreaLayoutGuide).offset(metrics.timeLabelTopPadding)
+            make.centerX.centerY.equalTo(cloudImage.snp.center)
+            //make.leading.equalTo(metrics.timeLabelLeadingPadding)
             make.width.height.equalTo(50)
         }
         
         questionLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.leading.trailing.equalToSuperview().inset(sidePadding)
-            make.height.equalTo(height * 0.25)
+            make.leading.trailing.equalToSuperview().inset(metrics.sidePadding)
+            make.height.equalTo(metrics.height * 0.25)
         }
         
         answerButtons.enumerated().forEach { index, button in
+            
+            button.titleLabel?.font = UIFont.systemFont(ofSize: metrics.labelFontSize, weight: .bold)
             view.addSubview(button)
             
             button.snp.makeConstraints { make in
-                make.leading.trailing.equalToSuperview().inset(sidePadding)
-                make.height.equalTo(buttonHeight)
+                make.leading.trailing.equalToSuperview().inset(metrics.sidePadding)
+                make.height.equalTo(metrics.buttonHeight)
                 
                 if index == 0 {
                     make.top.equalTo(questionLabel.snp.bottom).offset(30)
                 } else {
-                    make.top.equalTo(answerButtons[index - 1].snp.bottom).offset(buttonSpacing)
+                    make.top.equalTo(answerButtons[index - 1].snp.bottom).offset(metrics.buttonSpacing)
                 }
                 
                 if index == answerButtons.count - 1 {
-                    make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(buttonBottomPadding)
+                    make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(metrics.buttonBottomPadding)
                 }
             }
         }
