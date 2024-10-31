@@ -30,4 +30,12 @@ final class KimBilirUITestsLaunchTests: XCTestCase {
         attachment.lifetime = .keepAlways
         add(attachment)
     }
+    
+    func testLaunchScreenToHomeScreen() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let homeScreenButton = app.buttons["Yetişkin"]
+        XCTAssertTrue(homeScreenButton.waitForExistence(timeout: 3), "Home ekranı açılmadı.")
+    }
 }
