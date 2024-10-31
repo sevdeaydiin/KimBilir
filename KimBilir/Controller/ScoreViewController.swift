@@ -16,7 +16,6 @@ class ScoreViewController: UIViewController {
     
     var score: Int?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         scoreLabel.alpha = 0
