@@ -35,7 +35,11 @@ final class KimBilirUITestsLaunchTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
+        // butona tıklayarak soru ekranına yönlendirme
         let homeScreenButton = app.buttons["Yetişkin"]
-        XCTAssertTrue(homeScreenButton.waitForExistence(timeout: 3), "Home ekranı açılmadı.")
+        XCTAssertTrue(homeScreenButton.waitForExistence(timeout: 3), "Home screen not found.")
+        XCTAssertTrue(homeScreenButton.exists, "Button not found.")
+        homeScreenButton.tap()
     }
+    
 }

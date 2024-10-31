@@ -10,16 +10,13 @@ import XCTest
 final class KimBilirUITests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        // testler başlamadan önce yapılacak ayarlar
+        continueAfterFailure = false // bir hata oluşursa testi durdur
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        // testler sona erdikten sonra yapılacak işlemler
+        // test sırasında oluşturulan verileri temizle
     }
 
     @MainActor
@@ -31,9 +28,10 @@ final class KimBilirUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    // performans testleri. örn: uyg açılış süresi, CPU kullanımı
     @MainActor
     func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+        if #available(iOS 15.0, *) {
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()
